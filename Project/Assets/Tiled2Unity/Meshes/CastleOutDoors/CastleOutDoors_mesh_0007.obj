@@ -1,0 +1,33 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'CastleOutDoors_mesh_0007.obj'
+
+# Vertices (Count = 8)
+v -4.8 -8.96 0
+v -5.12 -8.96 0
+v -5.12 -8.639999 0
+v -4.8 -8.639999 0
+v -4.48 -9.28 0
+v -4.8 -9.28 0
+v -4.8 -8.96 0
+v -4.48 -8.96 0
+
+# Texture cooridinates (Count = 8)
+vt 0.001838235 0.5643382
+vt 0.06066176 0.5643382
+vt 0.06066176 0.6231618
+vt 0.001838235 0.6231618
+vt 0.1893382 0.001838207
+vt 0.2481618 0.001838207
+vt 0.2481618 0.06066179
+vt 0.1893382 0.06066179
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g CastleOutDoors_mesh_0007
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/5/1 6/6/1 7/7/1 8/8/1
+

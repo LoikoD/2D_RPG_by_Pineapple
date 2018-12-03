@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1850170714312086}
+  m_IsPrefabParent: 1
+--- !u!1 &1850170714312086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4034084175040066}
+  - component: {fileID: 212250325703760944}
+  - component: {fileID: 95172976066348678}
+  - component: {fileID: 50266967840964038}
+  - component: {fileID: 70818821396071758}
+  - component: {fileID: 61006000035032988}
+  - component: {fileID: 114070398859867306}
+  - component: {fileID: 114489788076110180}
+  - component: {fileID: 114450038844873106}
+  - component: {fileID: 114622711219871872}
+  - component: {fileID: 114308721660616266}
+  m_Layer: 0
+  m_Name: Archer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4034084175040066
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.625, y: -12.569, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50266967840964038
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &61006000035032988
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0055451393, y: -0.010924101}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.60968685, y: 0.40832186}
+  m_EdgeRadius: 0
+--- !u!70 &70818821396071758
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00199163, y: -0.000995636}
+  m_Size: {x: 0.1248276, y: 0.25137475}
+  m_Direction: 0
+--- !u!95 &95172976066348678
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b72668d919def5c48b8e90e6a5a36253, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114070398859867306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7adb44faf1769ad438325abf667b698e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggers:
+  - {fileID: 114308721660616266}
+--- !u!114 &114308721660616266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b76b5a6d7d429ab4780c5727945b01e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnce: 0
+  triggered: 0
+--- !u!114 &114450038844873106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970637e87e697a74489a3785d954e6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcID: 3
+  dialogueID: 2
+  message:
+  - messageText: "\u041F\u0440\u0438\u0432\u0435\u0442!"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u042D\u0442\u0438 \u043C\u043E\u043D\u0441\u0442\u0440\u044B \u0443\u0431\u0438\u043B\u0438
+      \u0432\u0441\u0435\u0445 \u043C\u043E\u0438\u0445 \u0440\u043E\u0434\u043D\u044B\u0445..."
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u0420\u0430\u0437\u0440\u0435\u0448\u0438 \u043F\u043E\u0439\u0442\u0438
+      \u0441 \u0442\u043E\u0431\u043E\u0439, \u0447\u0442\u043E\u0431\u044B \u043E\u0442\u043E\u043C\u0441\u0442\u0438\u0442\u044C
+      \u0438\u043C."
+    choices:
+    - "\u041A\u043E\u043D\u0435\u0447\u043D\u043E!"
+    - "\u041F\u0440\u043E\u0441\u0442\u0438, \u0442\u044B \u043D\u0435 \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0448\u044C
+      \u043A\u0430\u043A \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0431\u043E\u0435\u0446."
+    choiceDestiny: 0300000005000000
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: :)
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 1
+    triggerID: 0
+    ownerID: 0
+  - messageText: :(
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 0
+  messageId: 04000000050000000600000007000000
+  enter: 0
+  s: 0
+  questDialogue: 0
+  allowed: 0
+--- !u!114 &114489788076110180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161cd5e95f5a9414493d29239e8d2055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkZone: {fileID: 0}
+  canMove: 0
+--- !u!114 &114622711219871872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa3a6a245dd1ce46a602ad8689315ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroName: Archer
+  mapName: CastleOutDoors
+  possibleHeroesNum: 0
+--- !u!212 &212250325703760944
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850170714312086}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 21300110, guid: 689f950d54ead8249a28a588da51efd8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
