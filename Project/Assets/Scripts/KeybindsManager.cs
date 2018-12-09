@@ -42,7 +42,7 @@ public class KeybindsManager : MonoBehaviour {
         {
             BindKey(GameManager.instance.gameData.keyNames[i], GameManager.instance.gameData.keyCodes[i]);
         }
-      //  KeyBinds = GameManager.instance.gameData.keyBinds;
+        //  KeyBinds = GameManager.instance.gameData.keyBinds;
     }
 	
     public void BindKey(string key, KeyCode keyBind)
@@ -53,7 +53,6 @@ public class KeybindsManager : MonoBehaviour {
         }
 
         Dictionary<string, KeyCode> currentDictionary = KeyBinds;
-
         if (!currentDictionary.ContainsKey(key))
         {
             currentDictionary.Add(key, keyBind);
@@ -64,7 +63,7 @@ public class KeybindsManager : MonoBehaviour {
         else if (currentDictionary.ContainsValue(keyBind))
         {
             string myKey = currentDictionary.FirstOrDefault(x => x.Value == keyBind).Key;
-
+            
             currentDictionary[myKey] = KeyCode.None;
             menuController.UpdateKeyText(myKey, KeyCode.None);
             int myIndex = GameManager.instance.gameData.keyNames.FindIndex(x => x == myKey);

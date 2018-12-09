@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class QuestManager : MonoBehaviour {
 	public string itemCollected;
 
 	public string enemyKilled;
+
+    public GameObject updateQuestText;
 
     
 
@@ -66,5 +69,17 @@ public class QuestManager : MonoBehaviour {
         {
             quests[i].gameObject.SetActive(activeQuests[i]);
         }
+    }
+
+    public void ShowUpdateQuestText()
+    {
+        StartCoroutine(NewQuest());
+    }
+
+    IEnumerator NewQuest()
+    {
+        updateQuestText.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        updateQuestText.SetActive(false);
     }
 }

@@ -12,6 +12,7 @@ public class MenuController : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject keyBindsMenu;
     public AttributesController attributesController;
+    public QuestsWindowController questsWindowController;
     public Button loadButton;
     public MessageController messageController;
     public AudioMixer audioMixer;
@@ -102,6 +103,7 @@ public class MenuController : MonoBehaviour
                     loadButton.interactable = false;
                 }
                 menu.SetActive(true);
+                questsWindowController.menu = true;
                 attributesController.menu = true;
                 menuState = MenuStates.MENU;
                 break;
@@ -111,6 +113,7 @@ public class MenuController : MonoBehaviour
                 GameManager.instance.playerCharacter.GetComponent<PlayerMovement>().canMove = true;
                 menu.SetActive(false);
                 attributesController.menu = false;
+                questsWindowController.menu = false;
                 menuState = MenuStates.NONE;
                 break;
             case MenuStates.SETTINGS:

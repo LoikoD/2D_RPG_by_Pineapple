@@ -62,13 +62,15 @@ public class GameManager : MonoBehaviour {
     //XP
     public XpPanelController xpPanelController;
 
+    private SfxManager sfxManager;
+
     void Awake () {
 		//check if instance exist
         if (instance == null)
         {
             //if not set the instance to this
             instance = this;
-            nextHeroPosition = new Vector2(14.48f, -8.76f);
+            nextHeroPosition = new Vector2(25.3f, -3.3f);
            // CreateEnemySquads();
         }
         //if it exists but is not this instance
@@ -141,7 +143,7 @@ public class GameManager : MonoBehaviour {
 
                     LoadWorld();
                     PotionDrop();
-                    XpGain();
+                    XpGain(gameData.potentialXp);
 
                     gameState = GameStates.WORLD_STATE;
                 }
@@ -321,13 +323,16 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    private void XpGain()
+    public void XpGain(int xpAmount)
     {
-        gameData.currentXp += gameData.potentialXp;
+        if (sfxManager == null)
+            sfxManager = FindObjectOfType<SfxManager>();
+        gameData.currentXp += xpAmount;
         while (gameData.currentXp >= gameData.maxXp)
         {
             gameData.currentXp = gameData.currentXp - gameData.maxXp;
             gameData.unusedAttributesPoints += 5;
+            sfxManager.levelUpSound.PlayDelayed(0.5f);
             xpPanelController.StartBlinking();
         }
         xpPanelController.UpdateXpBar();

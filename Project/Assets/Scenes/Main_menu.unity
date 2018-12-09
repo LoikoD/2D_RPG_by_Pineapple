@@ -547,8 +547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameData:
     mapName: Forest
-    heroPositionX: 14.48
-    heroPositionY: -8.76
+    heroPositionX: 25.3
+    heroPositionY: -3.3
     heroSquad: 0001
     defeatedSquads: 
     joinedHeroNpcs: 
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alpha 0.6.0.155
+  m_Text: Alpha 0.7.0.163
 --- !u!222 &1557476859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1431,6 +1431,16 @@ Prefab:
         type: 2}
       propertyPath: lastScene
       value: WorldScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563064157047350, guid: 28c3fa7bf5d3bc047b521c11a2714a0d,
+        type: 2}
+      propertyPath: gameData.heroPositionX
+      value: 25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563064157047350, guid: 28c3fa7bf5d3bc047b521c11a2714a0d,
+        type: 2}
+      propertyPath: gameData.heroPositionY
+      value: -3.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28c3fa7bf5d3bc047b521c11a2714a0d, type: 2}

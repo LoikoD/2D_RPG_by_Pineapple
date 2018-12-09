@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\Attacks\MeleeAttacks\Slash.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicSwitcher.cs" />
+    <Compile Include="Assets\Scripts\Audio\SfxManager.cs" />
     <Compile Include="Assets\Scripts\BaseClasses\BaseClass.cs" />
     <Compile Include="Assets\Scripts\BaseClasses\BaseEnemy.cs" />
     <Compile Include="Assets\Scripts\BaseClasses\BaseHero.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Assets\Scripts\UIControllers\ContinueButtonController.cs" />
     <Compile Include="Assets\Scripts\UIControllers\MenuController.cs" />
     <Compile Include="Assets\Scripts\UIControllers\MessageController.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\QuestsWindowController.cs" />
     <Compile Include="Assets\Scripts\UIControllers\XpPanelController.cs" />
     <Compile Include="Assets\Scripts\Warp.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />

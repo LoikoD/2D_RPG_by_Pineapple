@@ -32,16 +32,16 @@ public class GameData {
     public GameData()
     {
         //scene = "WorldScene";
-        mapName = "Forest";
-        heroPositionX = 14.48f;
-        heroPositionY = -8.76f;
+        mapName = "Beach";
+        heroPositionX = 25.3f;
+        heroPositionY = -3.3f;
     }
     
     public void NewGame()
     {
-        mapName = "Forest";
-        heroPositionX = 14.48f;
-        heroPositionY = -8.76f;
+        mapName = "Beach";
+        heroPositionX = 25.3f;
+        heroPositionY = -3.3f;
 
         heroSquad.Clear();
         heroSquad.Add(false);
@@ -98,6 +98,8 @@ public class GameData {
         keyCodes.Add(KeyCode.D);
         keyNames.Add("AttributesWindow");
         keyCodes.Add(KeyCode.Tab);
+        keyNames.Add("QuestsWindowButton");
+        keyCodes.Add(KeyCode.J);
         keyNames.Add("Submit");
         keyCodes.Add(KeyCode.Return);
         keyNames.Add("Cancel");
