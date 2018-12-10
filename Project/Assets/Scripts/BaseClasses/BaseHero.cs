@@ -71,7 +71,7 @@ public class BaseHero : BaseClass
         baseHP = 200 + health * 18;
         curHP = baseHP;
         coolDownTime = 64f / (dexterity + 8);
-        baseATK = 10 + damage * 2;
+        curATK = 10 + damage * 2;
         baseDEF = 1 + defense * 0.2f;
         curDEF = baseDEF;
     }
@@ -81,7 +81,7 @@ public class BaseHero : BaseClass
         baseHP = 200 + health * 18;
         curHP = baseHP;
         coolDownTime = 64f / (dexterity + 8);
-        baseATK = 10 + damage * 2;
+        curATK = 10 + damage * 2;
         baseDEF = 1 + defense * 0.2f;
         curDEF = baseDEF;
     }

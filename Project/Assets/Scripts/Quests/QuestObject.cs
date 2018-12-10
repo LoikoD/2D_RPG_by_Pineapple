@@ -57,13 +57,14 @@ public class QuestObject : MonoBehaviour {
 				theQM.enemyKilled = null;
 
 				enemyKillCount++;
-			}
 
-			if (enemyKillCount >= enemiesToKill) {
+                if (enemyKillCount >= enemiesToKill)
+                {
 
-				endQuest ();
+                    endQuest();
 
-			}
+                }
+            }
 
 		}
 

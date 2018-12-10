@@ -1,0 +1,48 @@
+Initialize engine version: 5.6.6f2 (6bac21139588)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+    Driver:   23.21.13.8813
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.065 seconds
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\playe\Desktop\2drpg\Builds\Alpha 0.7.0.163\Game\TheFallenKingdom_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.954660 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.345139 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3350.
+Total: 1.232605 ms (FindLiveObjects: 0.190519 ms CreateObjectMapping: 0.090128 ms MarkObjects: 0.926298 ms  DeleteObjects: 0.025017 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.072372 ms
+
+Unloading 177 unused Assets to reduce memory usage. Loaded Objects now: 1165.
+Total: 1.228435 ms (FindLiveObjects: 0.076015 ms CreateObjectMapping: 0.089165 ms MarkObjects: 0.676762 ms  DeleteObjects: 0.385529 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.006162 ms
+
+Unloading 288 unused Assets to reduce memory usage. Loaded Objects now: 614.
+Total: 1.339091 ms (FindLiveObjects: 0.058374 ms CreateObjectMapping: 0.050035 ms MarkObjects: 0.386171 ms  DeleteObjects: 0.843868 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 46fc -> priority: 1 
+  Thread -> id: 472c -> priority: 1 
