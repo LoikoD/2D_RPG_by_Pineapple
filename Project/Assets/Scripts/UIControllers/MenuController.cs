@@ -20,6 +20,7 @@ public class MenuController : MonoBehaviour
     public Slider masterSlider;
     public Slider musicSlider;
     public Slider soundSlider;
+    private bool inputEnabled;
 
     enum MenuStates
     {
@@ -34,6 +35,7 @@ public class MenuController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        inputEnabled = true;
         menuState = MenuStates.NONE;
         GetVolumes();
     }
@@ -41,9 +43,12 @@ public class MenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeybindsManager.Instance.KeyBinds["Cancel"]))
+        if (inputEnabled)
         {
-            ChangeMenuState();
+            if (Input.GetKeyDown(KeybindsManager.Instance.KeyBinds["Cancel"]))
+            {
+                ChangeMenuState();
+            }
         }
     }
 
@@ -167,5 +172,20 @@ public class MenuController : MonoBehaviour
         musicSlider.value = temp;
         audioMixer.GetFloat("soundVolume", out temp);
         soundSlider.value = temp;
+    }
+
+    public void DisableInput()
+    {
+        attributesController.menu = true;
+        questsWindowController.menu = true;
+        inputEnabled = false;
+
+    }
+
+    public void EnableInput()
+    {
+        attributesController.menu = false;
+        questsWindowController.menu = false;
+        inputEnabled = true;
     }
 }

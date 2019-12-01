@@ -154,6 +154,11 @@ public class BattleStateMachine : MonoBehaviour {
                         HSM.EnemyToAttack = PerformList[0].AttackersTarget;
                         HSM.currentState = HeroStateMachine.TurnState.ATTACK;
                     }
+                    else if (PerformList[0].turnType == TurnType.SPECIAL_ATTACK)
+                    {
+                        HSM.EnemyToAttack = PerformList[0].AttackersTarget;
+                        HSM.currentState = HeroStateMachine.TurnState.SPECIAL_ATTACK;
+                    }
                     else if (PerformList[0].turnType == TurnType.HEAL)
                     {
                         HSM.currentState = HeroStateMachine.TurnState.HEAL;
@@ -316,11 +321,11 @@ public class BattleStateMachine : MonoBehaviour {
 
     public void Input3() //switching to magic attacks
     {
-        HeroChoice.turnType = TurnType.ATTACK;
+        HeroChoice.turnType = TurnType.SPECIAL_ATTACK;
         HeroChoice.Attacker = HeroesToManage[0].name;
         HeroChoice.AttackersGameObject = HeroesToManage[0];
         HeroChoice.Type = "Hero";
-        HeroChoice.choosenAttack = HeroesToManage[0].GetComponent<HeroStateMachine>().hero.magicAttacks[0];
+        HeroChoice.choosenAttack = HeroesToManage[0].GetComponent<HeroStateMachine>().hero.attacks[0];
         attackButton.GetComponent<Button>().interactable = false;
         magicButton.GetComponent<Button>().interactable = false;
         potionButton.GetComponent<Button>().interactable = false;

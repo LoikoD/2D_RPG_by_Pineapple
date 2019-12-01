@@ -269,8 +269,8 @@ MonoBehaviour:
   hasAttackAnim: 0
   enemy:
     theName: GreenCP
-    baseHP: 5
-    curHP: 5
+    baseHP: 75
+    curHP: 75
     baseMP: 100
     curMP: 100
     baseATK: 8

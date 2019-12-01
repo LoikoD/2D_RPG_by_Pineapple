@@ -15,13 +15,9 @@ public class JoinSquad : DialogueTrigger {
 		triggered = true;
         HeroNpc heroNpc = transform.GetComponent<HeroNpc>();
         heroName = transform.GetComponent<HeroNpc>().heroName;
-        heroSquadNum = GameManager.instance.squadsManager.FindIndexByNameInHeroNpcs(heroName);
-
+       heroSquadNum = GameManager.instance.squadsManager.FindIndexByNameInHeroNpcs(heroName);
         GameManager.instance.gameData.heroSquad[heroNpc.possibleHeroesNum] = true;
         GameManager.instance.gameData.joinedHeroNpcs.Add(heroSquadNum);
-
         Destroy(gameObject);
-
-		//add whatever you want to happen here
 	}
 }

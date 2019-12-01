@@ -1,0 +1,72 @@
+Initialize engine version: 5.6.6f2 (6bac21139588)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     2007 MB
+    Driver:   26.21.14.4108
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.032 seconds
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Player™\Documents\MIREA\3 курс\5-6term\СиП инженерия\Release 1.0.175\Game\TheFallenKingdom_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.012200 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.113900 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 480.
+Total: 0.478800 ms (FindLiveObjects: 0.036100 ms CreateObjectMapping: 0.028300 ms MarkObjects: 0.388900 ms  DeleteObjects: 0.024300 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.474900 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 527.
+Total: 0.418800 ms (FindLiveObjects: 0.045000 ms CreateObjectMapping: 0.052200 ms MarkObjects: 0.308500 ms  DeleteObjects: 0.012300 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.362500 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 1.140600 ms (FindLiveObjects: 0.136800 ms CreateObjectMapping: 0.073000 ms MarkObjects: 0.906200 ms  DeleteObjects: 0.024100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.506200 ms
+
+Unloading 144 unused Assets to reduce memory usage. Loaded Objects now: 966.
+Total: 1.159300 ms (FindLiveObjects: 0.047000 ms CreateObjectMapping: 0.054600 ms MarkObjects: 0.629600 ms  DeleteObjects: 0.427600 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.355800 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3445.
+Total: 2.169800 ms (FindLiveObjects: 0.183500 ms CreateObjectMapping: 0.089800 ms MarkObjects: 1.866800 ms  DeleteObjects: 0.029100 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.426300 ms
+
+Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 1278.
+Total: 1.130800 ms (FindLiveObjects: 0.089700 ms CreateObjectMapping: 0.045900 ms MarkObjects: 0.629500 ms  DeleteObjects: 0.364900 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.056400 ms
+
+Unloading 427 unused Assets to reduce memory usage. Loaded Objects now: 578.
+Total: 1.583600 ms (FindLiveObjects: 0.054300 ms CreateObjectMapping: 0.057300 ms MarkObjects: 0.505500 ms  DeleteObjects: 0.966000 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 748 -> priority: 1 
+  Thread -> id: 4194 -> priority: 1 

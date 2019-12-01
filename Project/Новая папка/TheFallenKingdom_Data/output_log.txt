@@ -1,0 +1,52 @@
+Initialize engine version: 5.6.6f2 (6bac21139588)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     2007 MB
+    Driver:   26.21.14.4108
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.027 seconds
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Player™\Documents\Unity\2D RPG\Новая папка\TheFallenKingdom_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.118000 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.995500 ms
+Dialogue file didn't load, check filename
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 1.098600 ms (FindLiveObjects: 0.141500 ms CreateObjectMapping: 0.079900 ms MarkObjects: 0.858000 ms  DeleteObjects: 0.018500 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 27.204599 ms
+
+Unloading 160 unused Assets to reduce memory usage. Loaded Objects now: 1247.
+Total: 1.166200 ms (FindLiveObjects: 0.072600 ms CreateObjectMapping: 0.060400 ms MarkObjects: 0.678300 ms  DeleteObjects: 0.354000 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.825800 ms
+
+Unloading 396 unused Assets to reduce memory usage. Loaded Objects now: 588.
+Total: 1.425000 ms (FindLiveObjects: 0.057500 ms CreateObjectMapping: 0.065600 ms MarkObjects: 0.443600 ms  DeleteObjects: 0.857200 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 7300 -> priority: 1 
+  Thread -> id: 5c64 -> priority: 1 

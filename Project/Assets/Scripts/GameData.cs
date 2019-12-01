@@ -46,7 +46,7 @@ public class GameData {
         heroSquad.Clear();
         heroSquad.Add(false);
         heroSquad.Add(true);
-        //heroSquad.Add(false);
+        heroSquad.Add(false);
 
         defeatedSquads.Clear();
         joinedHeroNpcs.Clear();

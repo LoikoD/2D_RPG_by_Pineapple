@@ -137,7 +137,8 @@ MonoBehaviour:
   BattleScene: BattleScene
   orderInList: -1
   enemies:
-  - {fileID: 1277829107136720, guid: aeb89cdcd65abe041937f5fade60491e, type: 2}
+  - {fileID: 1119984494700812, guid: 632110e43529c114c9fac7d3fa81caca, type: 2}
+  - {fileID: 1119984494700812, guid: 632110e43529c114c9fac7d3fa81caca, type: 2}
   xpGain: 0
 --- !u!212 &212692659721403592
 SpriteRenderer:

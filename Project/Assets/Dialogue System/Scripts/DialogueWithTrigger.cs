@@ -51,8 +51,9 @@ public class DialogueWithTrigger : BaseDialogue {
 	}
 
 	//Activates trigger of index "index" on trigger list
-	void ActivateTrigger(int index){
-//		GetComponent<DialogueTriggerContainer>().Triggers[index].gameObject.SetActive(true);
-		GetComponent<DialogueTriggerContainer>().Triggers[index].FireTrigger();
+	void ActivateTrigger(int index)
+    {
+        //		GetComponent<DialogueTriggerContainer>().Triggers[index].gameObject.SetActive(true);
+        GetComponent<DialogueTriggerContainer>().Triggers[index].FireTrigger();
 	}
 }

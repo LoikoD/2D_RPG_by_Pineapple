@@ -11,6 +11,22 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1850170714312086}
   m_IsPrefabParent: 1
+--- !u!1 &1255722841343662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4154292027431256}
+  - component: {fileID: 114181691138713508}
+  m_Layer: 0
+  m_Name: ArcherTrigger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1850170714312086
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,8 +61,22 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.625, y: -12.569, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4154292027431256}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4154292027431256
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255722841343662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6372194, y: 6.277378, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_Children: []
+  m_Father: {fileID: 4034084175040066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50266967840964038
@@ -139,6 +169,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Triggers:
   - {fileID: 114308721660616266}
+  - {fileID: 114181691138713508}
+--- !u!114 &114181691138713508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255722841343662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ec0dadff6556c4183344dbbab15de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnce: 1
+  triggered: 0
+  newDialogueId: 12
+  questNum: 4
+  startQuest: 1
+  endQuest: 0
 --- !u!114 &114308721660616266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,43 +220,81 @@ MonoBehaviour:
     hasTrigger: 0
     triggerID: 0
     ownerID: 2
-  - messageText: "\u042D\u0442\u0438 \u043C\u043E\u043D\u0441\u0442\u0440\u044B \u0443\u0431\u0438\u043B\u0438
-      \u0432\u0441\u0435\u0445 \u043C\u043E\u0438\u0445 \u0440\u043E\u0434\u043D\u044B\u0445..."
+  - messageText: "\u0422\u044B \u0436\u0435 \u0437\u043D\u0430\u0435\u0448\u044C \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435
+      \u043D\u0430 \u044E\u0433\u0435 \u043E\u0442 \u0433\u043E\u0440\u043E\u0434\u0430?"
     choices: []
     choiceDestiny: 
     hasTrigger: 0
     triggerID: 0
     ownerID: 2
-  - messageText: "\u0420\u0430\u0437\u0440\u0435\u0448\u0438 \u043F\u043E\u0439\u0442\u0438
-      \u0441 \u0442\u043E\u0431\u043E\u0439, \u0447\u0442\u043E\u0431\u044B \u043E\u0442\u043E\u043C\u0441\u0442\u0438\u0442\u044C
-      \u0438\u043C."
+  - messageText: "\u0422\u0430\u043C \u043C\u043D\u043E\u0433\u043E \u0437\u043E\u043C\u0431\u0438!"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u041C\u043E\u0439 \u0434\u043E\u043C \u0441\u0430\u043C\u044B\u0439
+      \u0431\u043B\u0438\u0436\u043D\u0438\u0439 \u043A \u044E\u0436\u043D\u043E\u043C\u0443
+      \u0432\u0445\u043E\u0434\u0443"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u0411\u043E\u044E\u0441\u044C, \u0447\u0442\u043E \u0437\u043E\u043C\u0431\u0438
+      \u043C\u043E\u0433\u0443\u0442 \u043F\u0440\u0438\u0439\u0442\u0438 \u043A\u043E
+      \u043C\u043D\u0435 \u043D\u043E\u0447\u044C\u044E"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u041D\u043E \u043D\u0438\u043A\u0442\u043E \u043D\u0435 \u0445\u043E\u0447\u0435\u0442
+      \u043F\u043E\u0439\u0442\u0438 \u0438 \u0443\u0431\u0438\u0442\u044C \u0438\u0445..."
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u0422\u044B \u0436\u0435 \u0431\u043E\u0435\u0446, \u0443\u0431\u0435\u0439
+      \u0438\u0445 \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430"
+    choices: []
+    choiceDestiny: 
+    hasTrigger: 0
+    triggerID: 0
+    ownerID: 2
+  - messageText: "\u0421\u043F\u0440\u0430\u0432\u0438\u0448\u044C\u0441\u044F?"
     choices:
-    - "\u041A\u043E\u043D\u0435\u0447\u043D\u043E!"
-    - "\u041F\u0440\u043E\u0441\u0442\u0438, \u0442\u044B \u043D\u0435 \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0448\u044C
-      \u043A\u0430\u043A \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0431\u043E\u0435\u0446."
-    choiceDestiny: 0300000005000000
+    - "\u0411\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C"
+    - "\u042D\u0442\u043E \u0436\u0435 \u0437\u043E\u043C\u0431\u0438, \u0438\u0445
+      \u0432\u0441\u0435 \u0431\u043E\u044F\u0442\u0441\u044F, \u044F \u0432 \u0442\u043E\u043C
+      \u0447\u0438\u0441\u043B\u0435"
+    choiceDestiny: 080000000a000000
     hasTrigger: 0
     triggerID: 0
     ownerID: 2
-  - messageText: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
+  - messageText: "\u0425\u043E\u0442\u044F \u0431\u044B \u043E\u0434\u0438\u043D \u0441\u043C\u0435\u043B\u044B\u0439
+      \u0447\u0435\u043B\u043E\u0432\u0435\u043A \u0432 \u043D\u0430\u0448\u0435\u043C
+      \u0433\u043E\u0440\u043E\u0434\u0435"
     choices: []
     choiceDestiny: 
     hasTrigger: 0
     triggerID: 0
     ownerID: 2
-  - messageText: :)
+  - messageText: "\u0422\u0440\u0438\u0433\u0433\u0435\u0440 \u043D\u0430 \u043D\u0430\u0447\u0430\u043B\u043E
+      \u043A\u0432\u0435\u0441\u0442\u0430 \u043D\u0430 \u043A\u043B\u0430\u0434\u0431\u0438\u0449\u0435"
     choices: []
     choiceDestiny: 
     hasTrigger: 1
-    triggerID: 0
-    ownerID: 0
-  - messageText: :(
+    triggerID: 1
+    ownerID: 2
+  - messageText: "\u042F \u0442\u0430\u043A \u0438 \u0437\u043D\u0430\u043B\u0430..."
     choices: []
     choiceDestiny: 
     hasTrigger: 0
     triggerID: 0
-    ownerID: 0
-  messageId: 04000000050000000600000007000000
+    ownerID: 2
+  messageId: 04000000050000000600000007000000080000000b0000002500000026000000270000002800000029000000
   enter: 0
   s: 0
   questDialogue: 0

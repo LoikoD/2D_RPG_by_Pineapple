@@ -269,8 +269,8 @@ MonoBehaviour:
   hasAttackAnim: 0
   enemy:
     theName: BlackBat
-    baseHP: 5
-    curHP: 5
+    baseHP: 35
+    curHP: 35
     baseMP: 100
     curMP: 100
     baseATK: 8

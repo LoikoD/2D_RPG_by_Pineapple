@@ -269,8 +269,8 @@ MonoBehaviour:
   hasAttackAnim: 0
   enemy:
     theName: GreyCP
-    baseHP: 5
-    curHP: 5
+    baseHP: 25
+    curHP: 25
     baseMP: 200
     curMP: 200
     baseATK: 8

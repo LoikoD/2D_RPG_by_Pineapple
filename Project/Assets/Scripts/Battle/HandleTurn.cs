@@ -18,5 +18,6 @@ public class HandleTurn {
 public enum TurnType
 {
     ATTACK,
+    SPECIAL_ATTACK,
     HEAL
 }

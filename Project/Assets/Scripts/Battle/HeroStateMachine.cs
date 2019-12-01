@@ -27,6 +27,7 @@ public class HeroStateMachine : MonoBehaviour
         ADDTOLIST,
         WAITING,
         ATTACK,
+        SPECIAL_ATTACK,
         HEAL,
 		HURTED,
         DEAD
@@ -46,6 +47,7 @@ public class HeroStateMachine : MonoBehaviour
     private bool actionStarted = false;
     private Vector3 startPosition;
     private float animSpeed = 5f;
+    private float reduceArmorAmount = 1f;
 
     //dead
     private bool alive = true;
@@ -95,6 +97,9 @@ public class HeroStateMachine : MonoBehaviour
                 break;
 			case (TurnState.ATTACK):
 				StartCoroutine(TimeForAction(TurnState.ATTACK));
+                break;
+            case (TurnState.SPECIAL_ATTACK):
+                StartCoroutine(TimeForAction(TurnState.SPECIAL_ATTACK));
                 break;
             case (TurnState.DEAD):
                 if (!alive)
@@ -231,22 +236,28 @@ public class HeroStateMachine : MonoBehaviour
 
 		anim.SetBool ("isAttacking", false);
 
-			
 
+        float calcDamage = hero.curATK + BSM.PerformList[0].choosenAttack.attackDamage;
 
-
-        //do damage
-        DoDamage();
+        if (actionState == TurnState.SPECIAL_ATTACK)
+        {
+            calcDamage /= 1.5f;
+        }
+        DoDamage(calcDamage);
 
 
         //animate back to startposition
-		if (hero.isMelee) {
+        if (hero.isMelee) {
 			Vector3 firstPosition = startPosition;
 			while (MoveTowardsStart(firstPosition))
 			{
 				yield return null;
 			}
 		}
+        if (actionState == TurnState.SPECIAL_ATTACK)
+        {
+            ReduceArmor();
+        }
 
         //remove this performer from the list in BSM
         BSM.PerformList.RemoveAt(0);
@@ -318,10 +329,14 @@ public class HeroStateMachine : MonoBehaviour
         UpgradeHpBar();
     }
 
-    void DoDamage()
+    void DoDamage(float damage)
     {
-        float calcDamage = hero.curATK + BSM.PerformList[0].choosenAttack.attackDamage;
-        EnemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(calcDamage);
+        EnemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(damage);
+    }
+
+    void ReduceArmor()
+    {
+        EnemyToAttack.GetComponent<EnemyStateMachine>().TakeAwayArmor(reduceArmorAmount);
     }
 
     void CreateHeroPanel()

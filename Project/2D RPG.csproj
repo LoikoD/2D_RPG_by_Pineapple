@@ -90,6 +90,7 @@
     <Compile Include="Assets\Dialogue System\Scripts\Triggers\JoinSquad.cs" />
     <Compile Include="Assets\Dialogue System\Scripts\Triggers\QuestStartTrigger.cs" />
     <Compile Include="Assets\Dialogue System\Scripts\Triggers\SampleTrigger.cs" />
+    <Compile Include="Assets\Dialogue System\Scripts\Triggers\StartBattle.cs" />
     <Compile Include="Assets\Scripts\Attacks\BaseAttack.cs" />
     <Compile Include="Assets\Scripts\Attacks\MagicAttacks\Fireball.cs" />
     <Compile Include="Assets\Scripts\Attacks\MagicAttacks\Icecube.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Assets\Scripts\GameData.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HeroNpc.cs" />
+    <Compile Include="Assets\Scripts\Intro.cs" />
     <Compile Include="Assets\Scripts\KeybindsManager.cs" />
     <Compile Include="Assets\Scripts\LoadOptions.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />

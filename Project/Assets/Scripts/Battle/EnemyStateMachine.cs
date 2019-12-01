@@ -306,6 +306,12 @@ public class EnemyStateMachine : MonoBehaviour {
         HeroToAttack.GetComponent<HeroStateMachine>().TakeDamage(calcDamage);
 
     }
+    
+
+    public void TakeAwayArmor(float armorAmount)
+    {
+        enemy.curDEF -= armorAmount;
+    }
 
     public void TakeDamage(float getDamageAmount)
     {

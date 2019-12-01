@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+    public Intro intro;
     public GameData gameData = new GameData();
 
     public static GameManager instance;
@@ -34,7 +35,8 @@ public class GameManager : MonoBehaviour {
         BATTLE_STATE,
         IDLE,
         AFTER_BATTLE,
-        RELOADING_WORLD
+        RELOADING_WORLD,
+        INTRO
     }
     public GameStates gameState;
 
@@ -96,14 +98,14 @@ public class GameManager : MonoBehaviour {
         }
         else if (SceneManager.GetActiveScene().name == "WorldScene")
         {
-            squadsManager = GameObject.Find("SquadsManager").GetComponent<SquadsManager>();
+           /* squadsManager = GameObject.Find("SquadsManager").GetComponent<SquadsManager>();
             squadsManager.DeleteEnemySquads(gameData.defeatedSquads);
             squadsManager.CreateEnemySquads();
 
             squadsManager.DeleteHeroNpcs(gameData.joinedHeroNpcs);
-            squadsManager.CreateHeroNpcs();
+            squadsManager.CreateHeroNpcs();*/
 
-            gameState = GameStates.WORLD_STATE;
+            gameState = GameStates.INTRO;
         }
         else
         {
@@ -165,6 +167,14 @@ public class GameManager : MonoBehaviour {
                     }
                 }
                 break;
+            case (GameStates.INTRO):
+                if (CheckSceneLoad(lastScene))
+                {
+                    LoadWorld();
+                    intro.StartIntro();
+                    gameState = GameStates.WORLD_STATE;
+                }
+                break;
         }
     }
 
@@ -179,7 +189,9 @@ public class GameManager : MonoBehaviour {
 
         squadsManager.DeleteHeroNpcs(gameData.joinedHeroNpcs);
         squadsManager.CreateHeroNpcs();
-        
+
+        intro = GameObject.Find("IntroManager").GetComponent<Intro>();
+
         questManager = GameObject.Find("Quest Manager").GetComponent<QuestManager>();
         questManager.ActivateQuestsFromList(gameData.activeQuests);
         questManager.completedQuests = gameData.completedQuests;
@@ -258,13 +270,14 @@ public class GameManager : MonoBehaviour {
         {
             case LoadOptions.NEW_GAME:
                 gameData.NewGame();
+                gameState = GameStates.INTRO;
                 break;
             case LoadOptions.LOAD_GAME:
                 LoadGameDataFromFile();
+                gameState = GameStates.AFTER_MENU;
                 break;
         }
 
-        gameState = GameStates.AFTER_MENU;
     }
 
     public void SaveToFile()
@@ -309,6 +322,7 @@ public class GameManager : MonoBehaviour {
         else
         {
             Debug.Log("Cant find save file!");
+            D
         }
     }
 
